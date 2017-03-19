@@ -1,1 +1,7 @@
 # Menu navigation links
+
+- title: Arduino Basics
+  url: /arduino/
+
+- title: Life
+  url: /life/
