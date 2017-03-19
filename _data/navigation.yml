@@ -1,7 +1,10 @@
 # Menu navigation links
 
 - title: Arduino Basics
-  url: /arduino/
+  url: /Theme-setup/
 
+- title: code
+  url: /code/
+  
 - title: Life
   url: /life/
