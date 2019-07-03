@@ -1,0 +1,29 @@
+#post {
+    margin: 0 15%;
+    border-radius: 10px;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding: 10px 0 20px 0;
+}
+
+#subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #9e9e9e;
+    padding: 0 0 10px 0;
+}
+
+#subtitle span {
+    padding: 0 50px;
+}
+
+#content {
+    padding: 10px;
+}
