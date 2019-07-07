@@ -116,3 +116,19 @@ gf.create(document.getElementById('lead-overlay'), [ // Target element
     "linear-gradient(76deg, rgb(13, 15, 18), rgb(32, 71, 57))",
     "linear-gradient(130deg, rgb(35, 23, 43), rgb(51, 89, 35), rgb(15, 89, 76))"
 ], 2500); // Interval
+
+document.getElementById('sendMsg').addEventListener('click', () => {
+    console.log(document.getElementById('email-input').value);
+    console.log(document.getElementById('msg-input').value)
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "deepak29km@gmail.com",
+        Password : "124d9f93-964d-4d4b-8bc1-d4601a25b84e",
+        To : 'deepak29km@gmail.com',
+        From : `${document.getElementById('email-input').value}`,
+        Subject : "New Message from the Readers.",
+        Body : `${document.getElementById('msg-input').value}`
+    }).then(
+      message => console.log(message)
+    );
+});

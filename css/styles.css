@@ -11,6 +11,21 @@
     Gulp and send to the /css folder which is then loaded on the page.
 */
 
+:root{
+    --color-background: #A8AEC1;
+    --color-key-background: #04151F;
+    --color-read: #7E7F9A;
+    --color-read-text: rgb(216, 216, 218);
+    --color-fiddled: #EB9486;
+    --color-fiddled-text: #374054;
+    --color-learning: #FFCF56;
+    --color-learning-text: #374054;
+    --color-cozy: #B8E1FF;
+    --color-cozy-text: #374054;
+    --color-virtuoso: #BAFF29;
+    --color-virtuoso-text: ##374054;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px
@@ -551,41 +566,52 @@ footer {
 
 .project {
     position: relative;
-    max-width: 1000px;
-    /* align-items: center; */
+    max-width: 800px;
     margin: 0 auto 30px auto;
-    overflow: hidden;
     background: #fff;
     border-radius: 4px
 }
 
-.project-image {
-    float: left
-}
-
 .project-info {
-    position: absolute;
     text-align: justify;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    margin-left: 300px;
     padding: 15px
 }
 
-.project-info h3 {
-    /* float: left; */
+.project-info h4 {
+    padding: 0px;
+    margin: 10px auto;
+}
+.project-header {
+    display: flex;
+    background-color: #f7f7f7;
+}
+.project-header h3 {
     font-size: 1.5em;
-    font-weight: 300;
+    /* font-weight: 300; */
     color: #374054;
-    margin: 0 0 15px 0
+    margin: 10px 10px 0px 10px;
+}
+#tech-used {
+    display:block;
+    margin:0;
+    padding:0 10px;
+}
+#tech-used li {
+    display:inline-block;
+    margin:7px;
+    padding:3px 7px;
+    color: var(--color-fiddled-text);
+    background-color: #dddddd;
+    list-style:none;
+    cursor:default;
+    font-size: 0.7em;
+    border-radius: 3px;
 }
 
 .project-info p {
-    /* float: left; */
     color: #74808a;
     margin: 0 0 15px 0;
     font-size: 0.9em;
-    /* text-align: left; */
 }
 
 .no-image .project-info {
@@ -599,44 +625,96 @@ footer {
     display: none
 }
 
-#skills {
-    padding: 50px 15px;
-    text-align: center
+#skills{
+    padding:50px 15px;
+    text-align:center
+}
+#skills h2{
+    color:#374054;
+    margin-bottom:50px
+}
+#skills ul {
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px
 }
 
-#skills h2 {
-    color: #374054;
-    /* margin-bottom: 50px */
+#skills li{
+    display:inline-block;
+    margin:7px;
+    padding:5px 10px;
+    /* color: white; */
+    list-style:none;
+    cursor:default;
+    font-size:1.2em;
+    border-radius: 5px;
 }
 
-#skill-map {
-    position: relative;
-    height: 400px;
-    max-width: 800px;
-    background: #16527a;
-    margin: 0px auto 0px auto;
+#legend {
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px
+}
+hr {
+    margin-left:25% !important; 
+    margin-right:25% !important;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-#skill-map ul {
-    position: relative;
-    padding: 3px;
+#legend li{
+    display:inline-block;
+    margin:7px;
+    padding:5px 10px;
+    color:#374054;
+    list-style:none;
+    cursor:default;
+    font-size:0.7em;
+    border-radius: 3px;
 }
 
-#skill-map ul button {
-    margin: 5px;
-    font-size: 0.8em;
-    padding: 10px;
-    border: none;
-}
+/* Skill Levels:
+.read -> 1/5
+.fiddled -> 2/5
+.learning -> 3/5
+.cozy -> 4/5
+.virtuoso -> 5/5
+*/
 
-#skill-map ul button:hover {
-    transform: scale(1.1);
-    background-color: darkcyan;
-}
-
+  .read {
+    background-color: var(--color-read);
+    color: var(--color-read-text);
+  }
+  
+  .fiddled {
+    background-color: var(--color-fiddled);
+    color: var(--color-fiddled-text);
+  }
+  
+  .learning {
+    background-color: var(--color-learning);
+    color: var(--color-learning-text);
+  }
+  
+  .cozy {
+    background-color: var(--color-cozy);
+    color: var(--color-cozy-text);
+  }
+  
+  .virtuoso {
+    background-color: var(--color-virtuoso);
+    color: var(--color-virtuoso-text);
+  }
+  
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    background: #374054;
     text-align: center
 }
 
@@ -659,7 +737,7 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #1d6fa5;
+    background: #64708b;
     color: #fff;
     transition: .5s ease all
 }
@@ -689,7 +767,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #16527a
+    background: #202633
 }
 
 #contact-form textarea {
