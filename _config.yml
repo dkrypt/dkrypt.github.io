@@ -1,14 +1,14 @@
 # Site Settings
-title: Bulma Clean Theme
-tagline: Bulma Clean Theme
-email: your-email@domain.com
+title: Dkrypted
+tagline: Blog by Dkrypt
+email: deepak29km@gmail.com
 description: >
-  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "/bulma-clean-theme"
+  A simple blog site by Dkrypt
+baseurl: ""
 url: "https://www.csrhymes.com"
 permalink: pretty
-#favicon: /path/to/favicon.png
-gh_sponsor: chrisrhymes
+favicon: favicon1.png
+# gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 
 paginate: 5
@@ -59,7 +59,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: "Dkrypt"
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
